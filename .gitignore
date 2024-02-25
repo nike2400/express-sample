@@ -77,6 +77,8 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
+# Just delete "#" of line 82-86 not to upload ".env" file onto github
+
 # .env
 # .env.development.local
 # .env.test.local
