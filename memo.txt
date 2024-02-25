@@ -78,12 +78,15 @@ npx sequelize init *** Some folders and files will be created automatically. If 
 -Create Database
 npx sequelize db:create
 
+- Confirm Connection
+http://localhost:4000/api/user/db
+
 -Create module
 npx sequelize model:create --name User --attributes name:string
 
 -Migration *** Tables are automatically set up according to models
 npx sequelize db:migrate
-npx db:migrate:undo **** Undo
+npx db:migrate:undo *** Undo
 
 -Seeding *** Inserting initial data. You need to create seeder file first.
 npx sequelize db:seed --seed /seeders/UserSeeder.js
