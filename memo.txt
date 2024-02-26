@@ -75,6 +75,14 @@ http://localhost:4000/
 -Intialize Sequelize
 npx sequelize init *** Some folders and files will be created automatically. If you copy my code, this command will fail because my codes has alredady had the same folders and files.
 
+▪️ Configure /config/config.json
+Configure config.json file according to your project
+
+Note: Please add this line if you cannnot access to the database
+"dialectOptions": {
+      "socketPath": "/your_path_to/MAMP/tmp/mysql/mysql.sock"
+    }
+
 -Create Database
 npx sequelize db:create
 

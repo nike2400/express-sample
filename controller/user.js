@@ -11,12 +11,10 @@ exports.confirmDbConnection = async (req, res) => {
   try {
     await sequelize.authenticate();
     msg = 'Connection has been established successfully.';
-
+    return res.status(200).json(msg);
   } catch (error) {
-    console.log(error);
-    msg = 'Connection has been failed';
+    return res.status(500).json(error);
   }
-  return res.status(200).json(msg);
 };
 
 exports.register = async (req, res) => {
