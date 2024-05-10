@@ -94,7 +94,7 @@ npx sequelize model:create --name User --attributes name:string
 
 -Migration *** Tables are automatically set up according to models
 npx sequelize db:migrate
-npx db:migrate:undo *** Undo
+npx sequelize db:migrate:undo *** Undo
 
 -Seeding *** Inserting initial data. You need to create seeder file first.
 npx sequelize db:seed --seed /seeders/UserSeeder.js
