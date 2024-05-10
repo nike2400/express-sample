@@ -78,7 +78,7 @@ npx sequelize init *** Some folders and files will be created automatically. If 
 ▪️ Configure /config/config.json
 Configure config.json file according to your project
 
-Note: Please add this line if you cannnot access to the database
+Note: Please add  this line to DbConnect.js if you cannnot access to the database
 "dialectOptions": {
       "socketPath": "/your_path_to/MAMP/tmp/mysql/mysql.sock"
     }
